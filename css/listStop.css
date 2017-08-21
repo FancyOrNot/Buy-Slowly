@@ -68,10 +68,10 @@ header .search .headSearch .searchBtn input {
   position: absolute;
 }
 
-section form {
+section .aspnetForm {
   background-color: RGB(242, 242, 242);
 }
-section form nav {
+section .aspnetForm nav {
   height: 36px;
   background-color: #ebebeb;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
@@ -81,31 +81,96 @@ section form nav {
   padding-left: 8px;
   font-size: 14px;
 }
-section form nav a {
+section .aspnetForm nav a {
   color: #5a5a5a;
 }
-section form .ultop .title {
-  font-size: 16px;
-  color: #874604;
-  height: 40px;
-  padding-left: 10px;
-  line-height: 40px;
-  margin: 10px 5px;
-  border: 1px solid #ccc;
-  background-color: #eee;
-}
-section form .ultop .list {
-  padding: 0px 10px;
-}
-section form .ultop .list .flt a {
-  height: 40px;
-  background: url(../images/arrow1.gif) right center no-repeat;
-  line-height: 40px;
+section .aspnetForm nav span {
   color: #000;
+}
+section .aspnetForm .ultop .hd {
+  background: #f3f3f3;
+  border: 1px solid #c8c8c8;
+  border-left: none;
+  border-right: none;
+}
+section .aspnetForm .ultop .hd h3 {
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #874604;
+  font-weight: bold;
+}
+section .aspnetForm .ultop .list ul li:nth-child(1) > a > em, section .aspnetForm .ultop .list ul li:nth-child(2) > a > em, section .aspnetForm .ultop .list ul li:nth-child(3) > a > em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 20px;
+  vertical-align: top;
+  margin: 0 6px 0 0;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+section .aspnetForm .ultop .list ul li:nth-child(1) > a > em {
+  background: #f10e0e;
+}
+section .aspnetForm .ultop .list ul li:nth-child(2) > a > em {
+  background: #ff9314;
+}
+section .aspnetForm .ultop .list ul li:nth-child(3) > a > em {
+  background: #8adf5b;
+}
+section .aspnetForm .ultop .list ul li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: right center;
+}
+section .aspnetForm .ultop .list ul li a .top {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 20px;
+  vertical-align: top;
+  margin: 0 6px 0 0;
+  font-size: 14px;
+  font-style: normal;
+  background: #c9c9c9;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+section .aspnetForm .ultop .list ul li a .inner {
+  display: inline-block;
+}
+section .aspnetForm .ultop .list ul li a .inner .tit {
+  color: #000000;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-style: normal;
   font-size: 16px;
-  display: block;
-  padding-left: 0px;
-  border-bottom: 1px solid #ccc;
+}
+section .aspnetForm .ultop .list ul li a .inner p {
+  font-size: 12px;
+  color: #999999;
+  margin-top: 3px;
+}
+section .aspnetForm .model .hd {
+  background: #f3f3f3;
+  border: 1px solid #c8c8c8;
+  border-left: none;
+  border-right: none;
+}
+section .aspnetForm .model .hd h3 {
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #874604;
   font-weight: bold;
 }
 

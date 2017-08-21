@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/clqcommon.css">
     <link rel="stylesheet" href="../css/brand.css">
     <script src="../script/html5shiv.js"></script>
-    <script src="../script/brand.js"></script>
 </head>
 
 <body>
@@ -49,19 +48,44 @@
                 <div class="ultop">
                     <div class="title">热门品牌排行</div>
                     <div class="list">
-                        <div class="flt">
-                            <a href="#">某某十大品牌</a>
-                        </div>
                     </div>
                 </div>
             </form>
         </section>
+        <div class="promotionAdd">
+            <a class="closefix" href="javascript:;"></a>
+            <div class="icon"></div>
+            <p class="titlefix">慢慢买</p>
+            <p class="describe">全网比价,查历史价格</p>
+            <a class="download-btn" href="#">立即打开</a>
+        </div>
     </div>
 </body>
 
 </html>
+<script src="../script/jquery/jquery.js"></script>
+<script src="../script/artTemplate/template.js"></script>
+
 <script type="text/template" id="ultopList">
-    <div class="flt">
-        <a href="#">某某十大品牌</a>
+    <div class="flt" id=''>
+        {{each result as value i}}
+        <a href="listStop.html">{{value.brandTitle}}</a> {{/each}}
     </div>
+</script>
+<script>
+    $(function () {
+        $.ajax({
+            url: 'http://139.199.192.48:9090/api/getbrandtitle',
+            success: function (result) {
+                var html = template('ultopList', result);
+                $('form .list').html(html);
+            }
+        });//请求品牌列表数据
+        // 点击底部关闭按钮隐藏广告
+        $('.closefix').on('click',function(){
+            $('.promotionAdd').css('display','none');
+        });
+        // 点击某一个品牌的时候跳转到该品牌对应的十大品牌
+    })
+
 </script>

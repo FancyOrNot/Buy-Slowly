@@ -15,9 +15,7 @@ require.config({
     'ckeditor': 'ckeditor/ckeditor',
     'utils': '/utils',
     'Jcrop': 'Jcrop/js/Jcrop',
-//      'common': 'js/common'
-    // 'common': 'js/dashboard/common',
-    // 'login': 'js/dashboard/login'
+    'brand': 'brand'
   },
   shim: {
     bootstrap: {
@@ -34,4 +32,3 @@ require.config({
     }
   }
 });
-require(['common']);

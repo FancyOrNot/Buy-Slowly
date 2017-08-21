@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买比价网--手机版--品牌大全</title>
+    <link rel="stylesheet" href="../css/clqcommon.css">
+    <link rel="stylesheet" href="../css/listStop.css">
+    <script src="../script/html5shiv.js"></script>
+</head>
+
+<body>
+    <!--最外层容器-->
+    <div class="index-layout">
+        <!--顶部搜索栏-->
+        <header>
+            <div class="top">
+                <div id="Logo">
+                    <a href="#">
+                    <img src="../images/header_logo.png" alt="">
+                </a>
+                </div>
+                <div id="downLoad">
+                    <a href="#">
+                    <img src="../images/header_app.png" alt="">
+                </a>
+                </div>
+            </div>
+            <form class="search">
+                <div class="headSearch">
+                    <div class="searchText">
+                        <input type="search" placeholder="请输入您想要比价的商品">
+                    </div>
+                    <div class="searchBtn">
+                        <input type="submit" value="搜索">
+                    </div>
+                </div>
+            </form>
+        </header>
+        <!--品牌大全列表-->
+        <section>
+            <div class="aspnetForm">
+                <nav>
+                    <a href="#">首页</a>&nbsp;&gt;&nbsp;<a href="#">品牌大全</a>&nbsp;&gt;&nbsp;<span>某某某哪个品牌好</span>
+                </nav>
+                <div class="ultop">
+                    <div class="hd">
+                        <h3>平板电视哪个牌子好</h3>
+                    </div>
+                    <div class="list">
+                        <!--品牌排名列表-->
+                        <ul>
+                            <li>
+                                <a href="#" title="海信平板电视">
+                                    <em class="top1 top">1</em>
+                                    <div class="inner">
+                                        <div class="tit">海信平板电视</div>
+                                        <p>30天全网销量：515446件</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="海信平板电视">
+                                    <em class="top2 top">1</em>
+                                    <div class="inner">
+                                        <div class="tit">海信平板电视</div>
+                                        <p>30天全网销量：515446件</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="海信平板电视">
+                                    <em class="top3 top">1</em>
+                                    <div class="inner">
+                                        <div class="tit">海信平板电视</div>
+                                        <p>30天全网销量：515446件</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="海信平板电视">
+                                    <em class="top3 top">1</em>
+                                    <div class="inner">
+                                        <div class="tit">海信平板电视</div>
+                                        <p>30天全网销量：515446件</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="model">
+                    <div class="hd">
+                        <h3>平板电视产品销量排行</h3>
+                    </div>
+                    <div class="list">
+                        <!--品牌排名列表-->
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="promotionAdd">
+            <a class="closefix" href="javascript:;"></a>
+            <div class="icon"></div>
+            <p class="titlefix">慢慢买</p>
+            <p class="describe">全网比价,查历史价格</p>
+            <a class="download-btn" href="#">立即打开</a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../script/jquery/jquery.js"></script>
+<script src="../script/artTemplate/template.js"></script>
+
+<script type="text/template" id="ultopList">
+    <div class="flt">
+        {{each result as value i}}
+        <li>
+            <a href="#" title="海信平板电视">
+                <em class="top1">1</em>
+                <div class="inner">
+                    <div class="tit">海信平板电视</div>
+                    <p>30天全网销量：515446件</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </div>
+</script>
+<script>
+    $(function () {
+        $.ajax({
+            url: 'http://139.199.192.48:9090/api/getbrandtitle',
+            success: function (result) {
+                var html = template('ultopList', result);
+                $('form .list').html(html);
+            }
+        });//请求品牌列表数据
+        // 点击底部关闭按钮隐藏广告
+        $('.closefix').on('click', function () {
+            $('.promotionAdd').css('display', 'none');
+        });
+    })
+
+</script>
