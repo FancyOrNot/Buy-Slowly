@@ -141,7 +141,7 @@ section .aspnetForm .ultop .list ul li a .top {
   margin: 0 6px 0 0;
   font-size: 14px;
   font-style: normal;
-  background: #c9c9c9;
+  background: #8eb9f5;
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
 }
 section .aspnetForm .ultop .list ul li a .inner {
@@ -172,6 +172,60 @@ section .aspnetForm .model .hd h3 {
   padding-left: 10px;
   color: #874604;
   font-weight: bold;
+}
+section .aspnetForm .model .list ul li {
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+section .aspnetForm .model .list ul li a {
+  display: block;
+}
+section .aspnetForm .model .list ul li a .pic {
+  float: left;
+  margin-right: 10px;
+}
+section .aspnetForm .model .list ul li a .pic img {
+  width: 100px;
+  height: 100px;
+}
+section .aspnetForm .model .list ul li a .info {
+  font-size: 14px;
+  line-height: 24px;
+}
+section .aspnetForm .model .list ul li a .info .tit {
+  color: #333333;
+  line-height: 22px;
+  min-height: 44px;
+}
+section .aspnetForm .model .list ul li a .info .price {
+  height: 25px;
+  margin-top: 4px;
+}
+section .aspnetForm .model .list ul li a .info .price em {
+  font-size: 18px;
+  color: #ea3900;
+  vertical-align: middle;
+  float: left;
+}
+section .aspnetForm .model .list ul li a .info .price .star {
+  float: right;
+  margin-top: 2px;
+}
+section .aspnetForm .model .list ul li a .info .price .star .star5 {
+  display: block;
+  width: 94px;
+  height: 20px;
+  font-size: 18px;
+  color: #ea3900;
+  float: left;
+  background: url("../images/clqxxxxxxx.png");
+}
+section .aspnetForm .model .list ul li a .info .other {
+  font-size: 12px;
+  color: #999999;
+}
+section .aspnetForm .model .list ul li a .info .other em {
+  margin-right: 10px;
 }
 
 .promotionAdd {

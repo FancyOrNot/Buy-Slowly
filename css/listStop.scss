@@ -150,7 +150,7 @@ section{
                             margin: 0 6px 0 0;
                             font-size: 14px;    
                             font-style: normal;
-                            background: #c9c9c9;
+                            background: #8eb9f5;
                             font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
                         }
                         .inner{
@@ -187,6 +187,64 @@ section{
                     padding-left: 10px;
                     color: #874604;
                     font-weight: bold;
+                }
+            }
+            .list{
+                ul{
+                    li{
+                        padding: 10px;
+                        border-bottom: 1px solid #e7e7e7;
+                        a{
+                            display: block;
+                            .pic{
+                                float: left;
+                                margin-right: 10px;
+                                img{
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                            .info{
+                                font-size: 14px;
+                                line-height: 24px;
+                                .tit{
+                                    color: #333333;
+                                    line-height: 22px;
+                                    min-height: 44px;
+                                }
+                                .price{
+                                    height: 25px;
+                                    margin-top: 4px;
+                                    em{
+                                        font-size: 18px;
+                                        color: #ea3900;
+                                        vertical-align: middle;
+                                        float: left;
+                                    }
+                                    .star{
+                                        float: right;
+                                        margin-top: 2px;
+                                        .star5{
+                                            display: block;
+                                            width: 94px;
+                                            height: 20px;
+                                            font-size: 18px;
+                                            color: #ea3900;
+                                            float: left;
+                                            background: url('../images/clqxxxxxxx.png');
+                                        }
+                                    }
+                                }
+                                .other{
+                                    font-size: 12px;
+                                    color: #999999;
+                                    em{
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

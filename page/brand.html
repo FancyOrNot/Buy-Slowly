@@ -67,10 +67,11 @@
 <script src="../script/artTemplate/template.js"></script>
 
 <script type="text/template" id="ultopList">
-    <div class="flt" id=''>
-        {{each result as value i}}
-        <a href="listStop.html">{{value.brandTitle}}</a> {{/each}}
+    {{each result as value i}}
+    <div class="flt">
+        <a href='listStop.html?id={{value.brandTitleId}}'>{{value.brandTitle}}</a>
     </div>
+    {{/each}}
 </script>
 <script>
     $(function () {
@@ -78,14 +79,13 @@
             url: 'http://139.199.192.48:9090/api/getbrandtitle',
             success: function (result) {
                 var html = template('ultopList', result);
-                $('form .list').html(html);
+                $('.ultop .list').html(html);
             }
         });//请求品牌列表数据
         // 点击底部关闭按钮隐藏广告
-        $('.closefix').on('click',function(){
-            $('.promotionAdd').css('display','none');
+        $('.closefix').on('click', function () {
+            $('.promotionAdd').css('display', 'none');
         });
-        // 点击某一个品牌的时候跳转到该品牌对应的十大品牌
     })
 
 </script>
