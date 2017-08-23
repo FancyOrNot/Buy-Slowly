@@ -66,7 +66,6 @@
 <script src="../script/jquery/jquery.js"></script>
 <script src="../script/artTemplate/template.js"></script>
 <script src="../script/jquery-cookie/jquery.cookie.js"></script>
-<!--listStop.html?id={{value.brandTitleId}}-->
 <script type="text/template" id="ultopList">
     {{each result as value i}}
     <div class="flt">
@@ -93,10 +92,6 @@
         // 存储当前当前品牌的名称
         $('.ultop .list').on('click','a', function () {
             localStorage.setItem('titleName',$(this).text());
-            // window.localStorage('titleName',$(this).text())
-            // $.cookie('titleName',);
-            // alert($(this).text());
-            // alert($.cookie());
             location.href = $(this).attr('href');
             alert(localStorage.getItem('titleName'));
             return false;
