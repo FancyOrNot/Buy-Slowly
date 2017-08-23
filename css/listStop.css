@@ -227,6 +227,91 @@ section .aspnetForm .model .list ul li a .info .other {
 section .aspnetForm .model .list ul li a .info .other em {
   margin-right: 10px;
 }
+section .aspnetForm .comment .hd {
+  background: #f3f3f3;
+  border: 1px solid #c8c8c8;
+  border-left: none;
+  border-right: none;
+}
+section .aspnetForm .comment .hd h3 {
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+section .aspnetForm .comment .hd h3 a {
+  color: #874604;
+}
+section .aspnetForm .comment .details ul li {
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+section .aspnetForm .comment .details ul li a {
+  display: block;
+}
+section .aspnetForm .comment .details ul li a .protit {
+  height: 80px;
+  margin-bottom: 10px;
+}
+section .aspnetForm .comment .details ul li a .protit .pic {
+  float: left;
+  margin-right: 10px;
+}
+section .aspnetForm .comment .details ul li a .protit .pic img {
+  width: 80px;
+  height: 80px;
+}
+section .aspnetForm .comment .details ul li a .protit .tit {
+  color: #999999;
+  font-size: 14px;
+  line-height: 22px;
+  min-height: 44px;
+}
+section .aspnetForm .comment .details ul li .plbox {
+  color: #5a5a5a;
+  background: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+}
+section .aspnetForm .comment .details ul li .plbox::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 29px;
+  top: -8px;
+  border-bottom: 8px solid #f8f8f8;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+section .aspnetForm .comment .details ul li .plbox a {
+  color: #5a5a5a;
+}
+section .aspnetForm .comment .details ul li .plbox a .comName {
+  height: 25px;
+  margin-top: 4px;
+}
+section .aspnetForm .comment .details ul li .plbox a .comName em {
+  font-size: 18px;
+  color: #ea3900;
+  vertical-align: middle;
+}
+section .aspnetForm .comment .details ul li .plbox a .comName .star {
+  margin-top: -4px;
+  display: inline-block;
+}
+section .aspnetForm .comment .details ul li .plbox a .comName .star .star5 {
+  height: 18x;
+  font-size: 14px;
+  color: #ea3900;
+}
+section .aspnetForm .comment .details ul li .plbox a .comName .star .star5 svg {
+  height: 18px;
+}
+section .aspnetForm .comment .details ul li .plbox a .comName i {
+  float: right;
+}
 
 .promotionAdd {
   position: fixed;

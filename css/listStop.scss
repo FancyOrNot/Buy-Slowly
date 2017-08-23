@@ -248,6 +248,103 @@ section{
                 }
             }
         }
+        .comment{
+            .hd{
+                background: #f3f3f3;
+                border: 1px solid #c8c8c8;
+                border-left: none;
+                border-right: none;
+                h3{
+                    line-height: 36px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    font-weight: bold;
+                    a{
+                        color: #874604;
+                    }
+                }
+            }
+            .details{
+                ul{
+                    li{
+                        padding: 10px;
+                        border-bottom: 1px solid #e7e7e7;
+                        a{
+                            display: block;
+                           .protit{
+                               height: 80px;
+                               margin-bottom: 10px;
+                               .pic{
+                                float: left;
+                                margin-right: 10px;
+                                img{
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                            }
+                               .tit{
+                                    color: #999999;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    min-height: 44px;
+                                }
+                           } 
+                        }
+                        .plbox{
+                                color: #5a5a5a;
+                                background: #f8f8f8;
+                                padding: 10px;
+                                border: 1px solid #e7e7e7;
+                                position: relative;
+                                &::before{
+                                    content: '';
+                                    width: 0;
+                                    height: 0;
+                                    position: absolute;
+                                    left: 29px;
+                                    top: -8px;
+                                    border-bottom: 8px solid #f8f8f8;
+                                    border-left: 8px solid transparent;
+                                    border-right: 8px solid transparent;
+                                }
+                            a{
+                                color: #5a5a5a;
+                              .comName{
+                                height: 25px;
+                                    margin-top: 4px;
+                                    em{
+                                        font-size: 18px;
+                                        color: #ea3900;
+                                        vertical-align: middle;
+                                    }
+                                    .star{
+                                        margin-top: -4px;
+                                        display: inline-block;
+                                        .star5{
+                                            // width: 90px;
+                                            height: 18x;
+                                            font-size: 14px;
+                                            color: #ea3900;
+                                            svg{
+                                                height: 18px;
+                                            }
+                                            // float: left;
+                                            // background: url('../images/clqxxxxxxx.png');
+                                        }
+                                    }
+                                    i{
+                                        float: right;
+                                    }
+                              }  
+                              .con{
+
+                              }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .promotionAdd{

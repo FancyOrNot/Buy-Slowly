@@ -65,7 +65,8 @@
 </html>
 <script src="../script/jquery/jquery.js"></script>
 <script src="../script/artTemplate/template.js"></script>
-
+<script src="../script/jquery-cookie/jquery.cookie.js"></script>
+<!--listStop.html?id={{value.brandTitleId}}-->
 <script type="text/template" id="ultopList">
     {{each result as value i}}
     <div class="flt">
@@ -74,17 +75,31 @@
     {{/each}}
 </script>
 <script>
+    var localStorage =window.localStorage;
     $(function () {
+        var titleName = '';
         $.ajax({
             url: 'http://139.199.192.48:9090/api/getbrandtitle',
             success: function (result) {
                 var html = template('ultopList', result);
+                console.log(result);
                 $('.ultop .list').html(html);
             }
         });//请求品牌列表数据
         // 点击底部关闭按钮隐藏广告
         $('.closefix').on('click', function () {
             $('.promotionAdd').css('display', 'none');
+        });
+        // 存储当前当前品牌的名称
+        $('.ultop .list').on('click','a', function () {
+            localStorage.setItem('titleName',$(this).text());
+            // window.localStorage('titleName',$(this).text())
+            // $.cookie('titleName',);
+            // alert($(this).text());
+            // alert($.cookie());
+            location.href = $(this).attr('href');
+            alert(localStorage.getItem('titleName'));
+            return false;
         });
     })
 
